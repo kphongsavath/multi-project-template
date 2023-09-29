@@ -1,0 +1,23 @@
+﻿{{> dbimports}}
+
+namespace {{namespace}}
+{
+    internal partial class {{class}} : DbContextBase
+    {
+{{{> dbsets}}}
+{{#if entity-type-errors}}
+{{#each entity-type-errors}}
+{{{entity-type-error}}}
+{{/each}}
+
+{{/if}}
+
+{{{> dbconstructor}}}
+
+{{#unless suppress-on-configuring}}
+{{{> dbonconfiguring}}}
+
+{{/unless}}
+{{{on-model-creating}}}
+    }
+}

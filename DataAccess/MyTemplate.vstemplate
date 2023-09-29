@@ -1,0 +1,100 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>DataAccess</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>DataAccess</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="DataAccess.csproj" File="DataAccess.csproj" ReplaceParameters="true">
+      <Folder Name="CodeTemplates" TargetFolderName="CodeTemplates">
+        <Folder Name="CSharpDbContext" TargetFolderName="CSharpDbContext">
+          <Folder Name="Partials" TargetFolderName="Partials">
+            <ProjectItem ReplaceParameters="false" TargetFileName="DbConstructor.hbs">DbConstructor.hbs</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="DbImports.hbs">DbImports.hbs</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="DbOnConfiguring.hbs">DbOnConfiguring.hbs</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="DbSets.hbs">DbSets.hbs</ProjectItem>
+          </Folder>
+          <ProjectItem ReplaceParameters="false" TargetFileName="DbContext.hbs">DbContext.hbs</ProjectItem>
+        </Folder>
+        <Folder Name="CSharpEntityType" TargetFolderName="CSharpEntityType">
+          <Folder Name="Partials" TargetFolderName="Partials">
+            <ProjectItem ReplaceParameters="false" TargetFileName="Constructor.hbs">Constructor.hbs</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="Imports.hbs">Imports.hbs</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="Properties.hbs">Properties.hbs</ProjectItem>
+          </Folder>
+          <ProjectItem ReplaceParameters="false" TargetFileName="Class.hbs">Class.hbs</ProjectItem>
+        </Folder>
+      </Folder>
+      <Folder Name="Configuration" TargetFolderName="Configuration">
+        <Folder Name="AutoMapper" TargetFolderName="AutoMapper">
+          <ProjectItem ReplaceParameters="true" TargetFileName="DataReaderProfile.cs">DataReaderProfile.cs</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="DependencyConfig.cs">DependencyConfig.cs</ProjectItem>
+      </Folder>
+      <Folder Name="EF" TargetFolderName="EF">
+        <Folder Name="Oracle" TargetFolderName="Oracle">
+          <Folder Name="DbContext" TargetFolderName="DbContext">
+            <Folder Name="Configurations" TargetFolderName="Configurations">
+              <ProjectItem ReplaceParameters="true" TargetFileName="SapMaraConfiguration.cs">SapMaraConfiguration.cs</ProjectItem>
+            </Folder>
+            <ProjectItem ReplaceParameters="true" TargetFileName="OracleDbContext.cs">OracleDbContext.cs</ProjectItem>
+          </Folder>
+          <Folder Name="Entities" TargetFolderName="Entities">
+            <ProjectItem ReplaceParameters="true" TargetFileName="SapMara.cs">SapMara.cs</ProjectItem>
+          </Folder>
+        </Folder>
+        <Folder Name="Sql" TargetFolderName="Sql">
+          <Folder Name="DbContext" TargetFolderName="DbContext">
+            <Folder Name="Configurations" TargetFolderName="Configurations">
+              <ProjectItem ReplaceParameters="true" TargetFileName="ArticleDataConfiguration.cs">ArticleDataConfiguration.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="EpUsersConfiguration.cs">EpUsersConfiguration.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="VsEpConfigurationConfiguration.cs">VsEpConfigurationConfiguration.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="VwAllocationFeedConfiguration.cs">VwAllocationFeedConfiguration.cs</ProjectItem>
+            </Folder>
+            <ProjectItem ReplaceParameters="true" TargetFileName="SqlContext.cs">SqlContext.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="SqlDbContext.cs">SqlDbContext.cs</ProjectItem>
+          </Folder>
+          <Folder Name="Entities" TargetFolderName="Entities">
+            <Folder Name="Custom" TargetFolderName="Custom">
+              <ProjectItem ReplaceParameters="true" TargetFileName="fFiscalWeekPlusMunisYearResult.cs">fFiscalWeekPlusMunisYearResult.cs</ProjectItem>
+            </Folder>
+            <Folder Name="dbo" TargetFolderName="dbo">
+              <ProjectItem ReplaceParameters="true" TargetFileName="VsEpConfiguration.cs">VsEpConfiguration.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="VwAllocationFeed.cs">VwAllocationFeed.cs</ProjectItem>
+            </Folder>
+            <Folder Name="Source" TargetFolderName="Source">
+              <ProjectItem ReplaceParameters="true" TargetFileName="ArticleData.cs">ArticleData.cs</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="EpUsers.cs">EpUsers.cs</ProjectItem>
+            </Folder>
+          </Folder>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="DbContextBase.cs">DbContextBase.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Helper" TargetFolderName="Helper">
+        <ProjectItem ReplaceParameters="true" TargetFileName="OracleHelper.cs">OracleHelper.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SqlHelper.cs">SqlHelper.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Interfaces" TargetFolderName="Interfaces">
+        <ProjectItem ReplaceParameters="true" TargetFileName="IOracleHelper.cs">IOracleHelper.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IProcessRepository.cs">IProcessRepository.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ISqlHelper.cs">ISqlHelper.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Repository" TargetFolderName="Repository">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ProcessRepository.cs">ProcessRepository.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="RepositoryBase.cs">RepositoryBase.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="efpt.oracle.config.json">efpt.oracle.config.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="efpt.sql.config.json">efpt.sql.config.json</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

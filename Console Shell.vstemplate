@@ -1,0 +1,41 @@
+﻿<VSTemplate Version="3.0.0" Type="ProjectGroup" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name>VS MPA Console Shell Template</Name>
+    <Description>A solution template for VS MPA Console applications</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Shell</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__VSTemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <SolutionItem TargetFileName="build\.editorconfig">build\.editorconfig</SolutionItem>
+    <SolutionItem TargetFileName="build\.gitignore">build\.gitignore</SolutionItem>
+    <SolutionItem TargetFileName="build\azure-pipelines.yml">build\azure-pipelines.yml</SolutionItem>
+    <ProjectCollection>
+        <ProjectTemplateLink ProjectName="$safeprojectname$.Common" CopyParameters="true">
+        Common\MyTemplate.vstemplate
+      </ProjectTemplateLink>
+	  <ProjectTemplateLink ProjectName="$safeprojectname$.Business.Common" CopyParameters="true">
+        Business.Common\MyTemplate.vstemplate
+    </ProjectTemplateLink>
+      	  <ProjectTemplateLink ProjectName="$safeprojectname$.Integration" CopyParameters="true">
+        Integration\MyTemplate.vstemplate
+      </ProjectTemplateLink>
+      	  <ProjectTemplateLink ProjectName="$safeprojectname$.DataAccess" CopyParameters="true">
+        DataAccess\MyTemplate.vstemplate
+      </ProjectTemplateLink>
+      <ProjectTemplateLink ProjectName="$safeprojectname$.Business.Logic" CopyParameters="true">
+        Business.Logic\MyTemplate.vstemplate
+      </ProjectTemplateLink>
+	  <ProjectTemplateLink ProjectName="$safeprojectname$.Console" CopyParameters="true">
+        Console\MyTemplate.vstemplate
+		</ProjectTemplateLink>
+    </ProjectCollection>
+  </TemplateContent>
+</VSTemplate>

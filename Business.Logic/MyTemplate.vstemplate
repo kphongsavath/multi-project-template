@@ -1,0 +1,34 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>VS.MPA.Business.Logic</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>VS.MPA.Business.Logic</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="VS.MPA.Business.Logic.csproj" File="VS.MPA.Business.Logic.csproj" ReplaceParameters="true">
+      <Folder Name="Configuration" TargetFolderName="Configuration">
+        <Folder Name="Mapper" TargetFolderName="Mapper">
+          <ProjectItem ReplaceParameters="true" TargetFileName="ArticleMapper.cs">ArticleMapper.cs</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="DependencyConfig.cs">DependencyConfig.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Interfaces" TargetFolderName="Interfaces">
+        <ProjectItem ReplaceParameters="true" TargetFileName="IProcessLogic.cs">IProcessLogic.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Logic" TargetFolderName="Logic">
+        <ProjectItem ReplaceParameters="true" TargetFileName="LogicBase.cs">LogicBase.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ProcessLogic.cs">ProcessLogic.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

@@ -1,0 +1,41 @@
+﻿{
+  "CodeGenerationMode": 2,
+  "ContextClassName": "OracleDbContext",
+  "ContextNamespace": "",
+  "DefaultDacpacSchema": null,
+  "FilterSchemas": false,
+  "IncludeConnectionString": false,
+  "ModelNamespace": "",
+  "OutputContextPath": "EF\/Oracle\/DbContext",
+  "OutputPath": "EF\/Oracle\/Entities",
+  "PreserveCasingWithRegex": true,
+  "ProjectRootNamespace": "$ext_safeprojectname$.DataAccess",
+  "Schemas": null,
+  "SelectedHandlebarsLanguage": 0,
+  "SelectedToBeGenerated": 0,
+  "Tables": [
+    {
+      "Name": "MPA_MASTER.SAP_MARA",
+      "ObjectType": 0
+    }
+  ],
+  "UiHint": "MPA_MASTER.LTSPHUB",
+  "UncountableWords": null,
+  "UseBoolPropertiesWithoutDefaultSql": false,
+  "UseDatabaseNames": false,
+  "UseDateOnlyTimeOnly": false,
+  "UseDbContextSplitting": true,
+  "UseFluentApiOnly": false,
+  "UseHandleBars": true,
+  "UseHierarchyId": false,
+  "UseInflector": false,
+  "UseLegacyPluralizer": false,
+  "UseManyToManyEntity": false,
+  "UseNoDefaultConstructor": true,
+  "UseNoObjectFilter": false,
+  "UseNodaTime": false,
+  "UseNullableReferences": true,
+  "UseSchemaFolders": false,
+  "UseSpatial": false,
+  "UseT4": false
+}

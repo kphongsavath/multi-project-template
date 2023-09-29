@@ -1,0 +1,53 @@
+﻿{
+  "CodeGenerationMode": 3,
+  "ContextClassName": "SqlDbContext",
+  "ContextNamespace": "",
+  "DefaultDacpacSchema": null,
+  "FilterSchemas": false,
+  "IncludeConnectionString": false,
+  "ModelNamespace": "",
+  "OutputContextPath": "EF\/Sql\/DbContext",
+  "OutputPath": "EF\/Sql\/Entities",
+  "PreserveCasingWithRegex": true,
+  "ProjectRootNamespace": "$ext_safeprojectname$.DataAccess",
+  "Schemas": null,
+  "SelectedHandlebarsLanguage": 0,
+  "SelectedToBeGenerated": 0,
+  "Tables": [
+    {
+      "Name": "[dbo].[VsEpConfiguration]",
+      "ObjectType": 0
+    },
+    {
+      "Name": "[Source].[EpUsers]",
+      "ObjectType": 0
+    },
+    {
+      "Name": "[dbo].[vw_Allocation_Feed]",
+      "ObjectType": 3
+    },
+    {
+      "Name": "[Source].[ArticleData]",
+      "ObjectType": 0
+    }
+  ],
+  "UiHint": "lbiaznmpasql002.MpaSalesInventoryhub",
+  "UncountableWords": null,
+  "UseBoolPropertiesWithoutDefaultSql": false,
+  "UseDatabaseNames": false,
+  "UseDateOnlyTimeOnly": false,
+  "UseDbContextSplitting": true,
+  "UseFluentApiOnly": false,
+  "UseHandleBars": true,
+  "UseHierarchyId": false,
+  "UseInflector": false,
+  "UseLegacyPluralizer": false,
+  "UseManyToManyEntity": false,
+  "UseNoDefaultConstructor": true,
+  "UseNoObjectFilter": false,
+  "UseNodaTime": false,
+  "UseNullableReferences": true,
+  "UseSchemaFolders": true,
+  "UseSpatial": false,
+  "UseT4": false
+}

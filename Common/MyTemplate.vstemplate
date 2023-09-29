@@ -1,0 +1,33 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Common</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Common</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Common.csproj" File="Common.csproj" ReplaceParameters="true">
+      <Folder Name="Configurations" TargetFolderName="Configurations">
+        <ProjectItem ReplaceParameters="true" TargetFileName="App.cs">App.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="AppSettings.cs">AppSettings.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ConnectionStrings.cs">ConnectionStrings.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="FileArguments.cs">FileArguments.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="GoogleApi.cs">GoogleApi.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Kafka.cs">Kafka.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Logging.cs">Logging.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="LogLevel.cs">LogLevel.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SerilogConfig.cs">SerilogConfig.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SmtpSettings.cs">SmtpSettings.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
