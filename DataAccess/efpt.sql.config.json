@@ -15,23 +15,11 @@
   "SelectedToBeGenerated": 0,
   "Tables": [
     {
-      "Name": "[dbo].[VsEpConfiguration]",
+      "Name": "[dbo].[table]",
       "ObjectType": 0
     },
-    {
-      "Name": "[Source].[EpUsers]",
-      "ObjectType": 0
-    },
-    {
-      "Name": "[dbo].[vw_Allocation_Feed]",
-      "ObjectType": 3
-    },
-    {
-      "Name": "[Source].[ArticleData]",
-      "ObjectType": 0
-    }
   ],
-  "UiHint": "lbiaznmpasql002.MpaSalesInventoryhub",
+  "UiHint": "db_connection_hint",
   "UncountableWords": null,
   "UseBoolPropertiesWithoutDefaultSql": false,
   "UseDatabaseNames": false,
